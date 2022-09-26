@@ -24,5 +24,78 @@ namespace ISRPO_PR1_Cherednichenko402
         {
             InitializeComponent();
         }
+
+       
+
+        float a, b;
+        int count;
+        bool znak = true;
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 0;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 1;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 2;
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 3;
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 4;
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 5;
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 6;
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 7;
+        }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 8;
+        }
+
+        private void Button_Click_9(object sender, RoutedEventArgs e)
+        {
+            textBox1.Text = textBox1.Text + 9;
+        }
+
+        private void Button_Click_10(object sender, RoutedEventArgs e)
+        {
+            textBox1.Text = textBox1.Text + ",";
+        }
+        private void Button_Click_11(object sender, RoutedEventArgs e)
+        {
+            a = float.Parse(textBox1.Text);
+            textBox1.Clear();
+            count = 1;
+            label1.Text = a.ToString() + "+";
+            znak = true;
+        }
+
     }
+
+
+
 }
