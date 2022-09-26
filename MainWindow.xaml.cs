@@ -85,13 +85,72 @@ namespace ISRPO_PR1_Cherednichenko402
         {
             textBox1.Text = textBox1.Text + ",";
         }
+
         private void Button_Click_11(object sender, RoutedEventArgs e)
         {
             a = float.Parse(textBox1.Text);
             textBox1.Clear();
             count = 1;
-            label1.Text = a.ToString() + "+";
+            label1.Content= a.ToString() + "+";
             znak = true;
+        }
+
+        private void Button_Click_12(object sender, RoutedEventArgs e)
+        {
+            a = float.Parse(textBox1.Text);
+            textBox1.Clear();
+            count = 2;
+            label1.Content = a.ToString() + "-";
+            znak = true;
+        }
+
+        private void Button_Click_13(object sender, RoutedEventArgs e)
+        {
+            a = float.Parse(textBox1.Text);
+            textBox1.Clear();
+            count = 3;
+            label1.Content = a.ToString() + "*";
+            znak = true;
+        }
+
+        private void Button_Click_14(object sender, RoutedEventArgs e)
+        {
+            a = float.Parse(textBox1.Text);
+            textBox1.Clear();
+            count = 4;
+            label1.Content = a.ToString() + "/";
+            znak = true;
+        }
+
+        private void Button_Click_15(object sender, RoutedEventArgs e)
+        {
+            calculate();
+            label1.Content = "";
+        }
+
+        private void calculate()
+        {
+            switch(count)
+            {
+                case 1:
+                    b = a + float.Parse(textBox1.Text);
+                    textBox1.Text = b.ToString();
+                    break;
+                case 2:
+                    b = a - float.Parse(textBox1.Text);
+                    textBox1.Text = b.ToString();
+                    break;
+                case 3:
+                    b = a * float.Parse(textBox1.Text);
+                    textBox1.Text = b.ToString();
+                    break;
+                case 4:
+                    b = a / float.Parse(textBox1.Text);
+                    textBox1.Text = b.ToString();
+                    break;
+                default:
+                    break;
+            }
         }
 
     }
