@@ -153,6 +153,37 @@ namespace ISRPO_PR1_Cherednichenko402
             }
         }
 
+        private void Button_Click_16(object sender, RoutedEventArgs e)
+        {
+            textBox1.Text = "";
+            label1.Content = "";
+        }
+
+        private void Button_Click_17(object sender, RoutedEventArgs e)
+        {
+            int lenght = textBox1.Text.Length - 1;
+            string text = textBox1.Text;
+            textBox1.Clear();
+            for (int i = 0; i < lenght; i++)
+            {
+                textBox1.Text = textBox1.Text + text[i];
+            }
+        }
+
+        private void Button_Click_18(object sender, RoutedEventArgs e)
+        {
+            if (znak == true)
+            {
+                textBox1.Text = "-" + textBox1.Text;
+                znak = false;
+            }
+            else if (znak == false)
+            {
+                textBox1.Text = textBox1.Text.Replace("-", "");
+                znak = true;
+            }
+        }
+
     }
 
 
