@@ -8,8 +8,8 @@
         Title="Калькулятор" Height="425" Width="336.458" Background="#FFC7C7C7">
     <Grid Margin="0,0,2,0">
 
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="62" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="306" BorderBrush="#FF6E6E6E" FontSize="22"/>
-        <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="14,22,0,0" VerticalAlignment="Top" Width="60" Height="37"/>
+        <TextBox x:Name="textBox1" HorizontalContentAlignment="Right" Height="62" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="306" BorderBrush="#FF6E6E6E" FontSize="22"/>
+        <Label x:Name="label1" Content="" HorizontalContentAlignment="Left" Margin="15,-4,176,0" VerticalAlignment="Top" Width="135" Height="59" FontSize="22"/>
         <Button Content="С" HorizontalAlignment="Left" Margin="20,91,0,0" VerticalAlignment="Top" Width="60" Height="40" BorderBrush="#FF6A6A6A" Click="Button_Click_16">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
